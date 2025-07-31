@@ -15,27 +15,28 @@ A Django web application that automatically removes backgrounds from uploaded im
 ## Installation
 
 1. **Clone or download the project**
-   ```bash
-   cd C:\Users\CK-2\CascadeProjects\django-bg-remover
-   ```
 
 2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Run database migrations**
+
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
 
 4. **Create a superuser (optional)**
+
    ```bash
    python manage.py createsuperuser
    ```
 
 5. **Start the development server**
+
    ```bash
    python manage.py runserver
    ```
@@ -44,18 +45,21 @@ A Django web application that automatically removes backgrounds from uploaded im
 
 ## Usage
 
-1. **Upload an Image**: 
+1. **Upload an Image**:
+
    - Visit the homepage
    - Drag and drop an image or click to browse
    - Supported formats: JPG, PNG, GIF, BMP, WebP
    - Maximum file size: 10MB
 
 2. **Process the Image**:
-   - Click "Remove Background" 
+
+   - Click "Remove Background"
    - Wait for the AI to process your image
    - View the result with transparent background
 
 3. **Download Result**:
+
    - Click the download button to save the processed image
    - Images are saved as PNG files with transparency
 
@@ -109,16 +113,19 @@ django-bg-remover/
 ## Troubleshooting
 
 **Installation Issues:**
+
 - Make sure Python 3.8+ is installed
 - Consider using a virtual environment
 - On Windows, you might need Visual Studio Build Tools for some packages
 
 **Processing Issues:**
+
 - Ensure uploaded images are valid image files
 - Check file size (max 10MB)
 - Some complex images may take longer to process
 
 **Performance:**
+
 - First-time processing may be slower as models are downloaded
 - Consider using a more powerful server for production use
 
